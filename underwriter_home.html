@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Underwriter Home - Star Protect Vehicle</title>
+  <link rel="stylesheet" href="underwriter_style.css">
+</head>
+<body>
+  <div class="uw-container">
+    <h2>Underwriter Dashboard</h2>
+    <p>Welcome, Underwriter! Create a new Vehicle Insurance below:</p>
+
+    <form id="insuranceForm">
+      <label>Vehicle No</label>
+      <input type="text" maxlength="10" placeholder="Enter Vehicle No" required>
+
+      <label>Vehicle Type</label>
+      <select required>
+        <option value="">-- Select Type --</option>
+        <option value="2w">2-Wheeler</option>
+        <option value="4w">4-Wheeler</option>
+      </select>
+
+      <label>Customer Name</label>
+      <input type="text" maxlength="50" placeholder="Enter Customer Name" required>
+
+      <label>Engine No</label>
+      <input type="number" placeholder="Enter Engine No" required>
+
+      <label>Chassis No</label>
+      <input type="number" placeholder="Enter Chassis No" required>
+
+      <label>Phone No</label>
+      <input type="tel" maxlength="10" pattern="[0-9]{10}" placeholder="Enter Phone No" required>
+
+      <label>Premium Amount</label>
+      <input type="number" placeholder="Enter Premium Amount" required>
+
+      <label>Insurance Type</label>
+      <select required>
+        <option value="">-- Select Type --</option>
+        <option value="full">Full Insurance</option>
+        <option value="third">Third Party</option>
+      </select>
+
+      <label>From Date</label>
+      <input type="date" required>
+
+      <label>To Date</label>
+      <input type="date" required>
+
+      <label>Underwriter ID</label>
+      <input type="text" placeholder="Enter Underwriter ID" required>
+
+      <button type="submit">Create Insurance</button>
+    </form>
+
+    <p id="message"></p>
+    <button class="logout" onclick="window.location.href='index.html'">🚪 Logout</button>
+  </div>
+
+  <script src="underwriter_script.js"></script>
+</body>
+</html>
